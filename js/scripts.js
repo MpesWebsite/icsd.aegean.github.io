@@ -27,6 +27,11 @@ window.addEventListener('DOMContentLoaded', event => {
 const overlay = document.getElementById('overlay');
 const closeButton = document.getElementById('close-menu');
 
+// login button 
+document.querySelector('.login-btn').addEventListener('click', function() {
+  window.location.href = 'login1.html'; // Replace 'login.html' with the URL of your login page
+});
+
 // Add an event listener to the menu button
 menuButton.addEventListener('click', () => {
   // Show the overlay and close button

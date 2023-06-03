@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Login 10</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css login/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Firebase SDK scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore-compat.js"></script>
+  <!-- Your custom JavaScript file -->
+  <script src="js login/main.js"></script>
+</head>
+
+<style>
+  body {
+    background-image: url("images/fonto4.png");
+    background-size: cover;
+    /* Additional CSS properties can be added here */
+  }
+</style>
+
+<body>
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="header">
+          <h1>Τμήμα Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</h1>
+          <h2>Classroom Management System</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="login-wrap p-0">
+            <h3 class="mb-4 text-center">Σύνδεση Χρήστη</h3>
+            <form id="login-form" class="signin-form">
+              <div class="form-group">
+                <input id="username" type="text" class="form-control" placeholder="Όνομα χρήστη (username)" required>
+              </div>
+              <div class="form-group">
+                <input id="password-field" type="password" class="form-control" placeholder="Συνθηματικό (password)" required>
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-control btn btn-primary submit px-3">ΕΙΣΟΔΟΣ</button>
+              </div>
+              <div class="form-group d-md-flex">
+                <div class="w-50">
+                  <label class="checkbox-wrap checkbox-primary">Να παραμείνω συνδεδεμένος
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="w-50 text-md-right">
+                  <a href="sign up.html" style="color: #fff">Κάνε Εγραφή</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js login/popper.js"></script>
+  <script src="js login/bootstrap.min.js"></script>
+</body>
+</html>
