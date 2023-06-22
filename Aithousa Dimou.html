@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+
+    <title>sofouli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 569 Edu Meeting
+
+https://templatemo.com/tm-569-edu-meeting
+
+-->
+  </head>
+
+<body>
+
+   
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="crms.html" class="logo">
+              CRMS
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              
+              <li id="user-info">
+                <div class="user-icon">
+                  <img src="assets/images/user.png" alt="User Icon">
+                </div>
+                <span id="username"></span>
+                <div id="logout-menu" class="dropdown-menu">
+                  <ul>
+                    <li><a id="logout-button" href="#">Log Out</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- ***** Header Area End ***** -->
+
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>αιθουσα δημου</h6>
+          <h2>δημαρχειο</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="meetings-page" id="meetings">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="meeting-single-item">
+                <div class="thumb">
+                  
+                  
+                  <a href="meeting-details.html"><img src="assets/images/aithousadimou.jpg" alt="" class="full-width"></a>
+
+                </div>
+                <div class="down-content">
+                  <a href="meeting-details.html"><h4>Αίθουσα Δήμου</h4></a>
+                  
+                  <p class="description">
+                    Αίθουσα Εκδηλώσεων Δημαρχείου (χωρητικότητα: 50 άτομα)
+                    </p>
+                  <div class="section">
+                    <h2>Class Schedule</h2>
+                    <div id="schedule">
+                      <div class="schedule-item">
+                        <div class="time">12:00 - 15:00</div>
+                        <div class="lesson">Maths</div>
+                      </div>
+                      <div class="schedule-item">
+                        <div class="time">15:30 - 17:00</div>
+                        <div class="lesson">English</div>
+                      </div>
+                      <div class="schedule-item">
+                        <div class="time">17:30 - 19:00</div>
+                        <div class="lesson">Science</div>
+                      </div>
+                    </div>
+                    <button id="edit-button">Edit</button>
+                    <div id="password-popup">
+                      <h3>Enter Password to Edit</h3>
+                      <input type="password" id="password-input" placeholder="Password">
+                      <button id="submit-button">Submit</button>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; 2023 by ICSD. All rights reserved.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#">
+              <img src="assets/images/paneaiglogofooter.png" alt="Your Company Name" class="custom-width">
+
+            </a>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="https://www.facebook.com/theicsd" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/icsdaegean" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCUDJInyPBp7U0FU1RBFVT_Q" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </section>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+     $(document).ready(function() {
+  // Check if the user is logged in
+  var userId = sessionStorage.getItem('userId');
+  if (!userId) {
+    // Redirect to the login page or handle unauthorized access
+    window.location.href = "login1.html";
+  }
+
+  // Initialize Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyDaZoKIyJdHltudOtqL-nHwJznLwxDxgjY",
+	  authDomain: "mpes-database.firebaseapp.com",
+	   databaseURL: "https://mpes-database-default-rtdb.europe-west1.firebasedatabase.app",
+	  projectId: "mpes-database",
+	  storageBucket: "mpes-database.appspot.com",
+	  messagingSenderId: "969357183449",
+	  appId: "1:969357183449:web:21010954f7f1b3237131c8",
+	  measurementId: "G-S7GBL413RN"
+};
+  firebase.initializeApp(firebaseConfig);
+
+  // Retrieve the user's name and display it
+  var firestore = firebase.firestore();
+  firestore.collection("users").doc(userId).get()
+    .then(function(doc) {
+      if (doc.exists) {
+        var username = doc.data().username;
+        $('#username').text(username);
+      } else {
+        console.log("User document not found");
+      }
+    })
+    .catch(function(error) {
+      console.error("Error retrieving user data: ", error);
+    });
+
+  // Toggle logout menu
+  var logoutMenuVisible = false;
+  $('#user-info').on('click', '.user-icon', function() {
+    logoutMenuVisible = !logoutMenuVisible;
+    if (logoutMenuVisible) {
+      $('#logout-menu').show();
+    } else {
+      $('#logout-menu').hide();
+    }
+  });
+
+  // Hide logout menu when clicking outside
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('#user-info').length) {
+      logoutMenuVisible = false;
+      $('#logout-menu').hide();
+    }
+  });
+
+  // Logout functionality
+  $('#logout-button').on('click', function() {
+    // Clear the login state from session storage
+    sessionStorage.removeItem('userId');
+
+    // Redirect to the login page or any desired page after logout
+    window.location.href = "login1.html";
+  });
+
+  var editMode = false;
+  var scheduleItems = $('#schedule .schedule-item');
+
+  // Edit Button Click Event
+  $('#edit-button').on('click', function() {
+    if (editMode) {
+      // Disable edit mode
+      editMode = false;
+      $(this).text('Edit');
+      scheduleItems.off('click'); // Unbind the click event handlers
+      saveBoardContent(); // Save the updated board content
+      alert('Edit mode disabled');
+    } else {
+      // Show the password input popup
+      $('#password-popup').fadeIn();
+    }
+  });
+
+  // Submit Button Click Event
+  $('#password-popup').on('click', '#submit-button', function() {
+    var password = $('#password-input').val();
+    console.log("Entered Password:", password);
+    console.log("Expected Password: 12345"); // Replace '12345' with your desired password
+    if (password.trim() === '12345') {
+      // Enable edit mode and perform necessary actions
+      editMode = true;
+      $('#edit-button').text('Save');
+      scheduleItems.on('click', enableEditing); // Bind the click event handlers
+      alert('Edit mode enabled');
+      // Hide the password input popup
+      $('#password-popup').fadeOut();
+    } else {
+      alert('Incorrect password');
+    }
+  });
+
+  // Function to enable editing when schedule item is clicked
+  function enableEditing() {
+    if (editMode) {
+      $(this).find('.time, .lesson').attr('contenteditable', true);
+    }
+  }
+
+  // Save Button Click Event
+  $('#save-button').on('click', function() {
+    if (editMode) {
+      // Disable edit mode
+      editMode = false;
+      $('#edit-button').text('Edit');
+      scheduleItems.find('.time, .lesson').attr('contenteditable', false);
+      alert('Edit mode disabled');
+
+      // Get the updated board content
+      var boardContent = $('#schedule').html();
+
+      // Update the board document in Firestore
+      firestore.collection("boards").doc("board11").set({
+        content: boardContent.toString() // Convert the content to a string value
+      })
+        .then(function() {
+          console.log("Board content saved to Firestore");
+        })
+        .catch(function(error) {
+          console.error("Error saving board content: ", error);
+        });
+    } else {
+      // Show the password input popup
+      $('#password-popup').fadeIn();
+    }
+  });
+
+  // Load the board content from Firestore
+  function loadBoardContent() {
+  firestore
+    .collection("boards")
+    .doc("board11")
+    .onSnapshot(function (doc) {
+      if (doc.exists) {
+        var boardContent = doc.data().content;
+        $('#schedule').html(boardContent);
+        scheduleItems = $('#schedule .schedule-item'); // Reassign scheduleItems after updating the DOM
+        scheduleItems.on('click', enableEditing); // Rebind the event handler to the schedule items
+      } else {
+        console.log("Board document not found");
+      }
+    }, function (error) {
+      console.error("Error retrieving board content: ", error);
+    });
+}
+  // Call loadBoardContent() on page load to display the initial content
+  loadBoardContent();
+
+  var checkSection = function checkSection() {
+    $('.section').each(function() {
+      var $this = $(this),
+        topEdge = $this.offset().top - 80,
+        bottomEdge = topEdge + $this.height(),
+        wScroll = $(window).scrollTop();
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        var currentId = $this.data('section'),
+          reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+        reqLink.closest('li').addClass('active').siblings().removeClass('active');
+      }
+    });
+  };
+
+  $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
+    e.preventDefault();
+    showSection($(this).attr('href'), true);
+  });
+
+  $(window).scroll(function() {
+    checkSection();
+  });
+
+  // Save the updated board content to Firestore
+  function saveBoardContent() {
+    var boardContent = $('#schedule').html();
+    firestore.collection("boards").doc("board11").update({
+      content: boardContent
+    })
+      .then(function() {
+        console.log("Board content saved to Firestore");
+      })
+      .catch(function(error) {
+        console.error("Error saving board content: ", error);
+      });
+  }
+});
+
+    </script>
+</body>
+
+
+  </body>
+
+</html>

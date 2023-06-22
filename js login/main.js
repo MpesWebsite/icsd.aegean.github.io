@@ -36,8 +36,11 @@ $(document).ready(function() {
 		.get()
 		.then(function(querySnapshot) {
 		  if (!querySnapshot.empty) {
+			// Store the login state in session storage
+			sessionStorage.setItem('userId', querySnapshot.docs[0].id);
+  
 			// Redirect to the main page
-			window.location.href = "main page.html";
+			window.location.href = "crms.html";
 		  } else {
 			// Handle incorrect username or password
 			console.log("Incorrect username or password");
@@ -47,5 +50,11 @@ $(document).ready(function() {
 		  console.error("Error retrieving user data: ", error);
 		});
 	});
-  });
   
+	// Check if the user is already logged in
+	var userId = sessionStorage.getItem('userId');
+	if (userId) {
+	  // Redirect to the main page
+	  window.location.href = "crms.html";
+	}
+  });

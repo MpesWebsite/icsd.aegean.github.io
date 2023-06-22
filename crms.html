@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
+    <title>CRMS</title>
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
+
+  </head>
+
+<body>
+
+ 
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="crms.html" class="logo">
+              CRMS
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              
+              <li id="user-info">
+                <div class="user-icon">
+                  <img src="assets/images/user.png" alt="User Icon">
+                </div>
+                <span id="username"></span>
+                <div id="logout-menu" class="dropdown-menu">
+                  <ul>
+                    <li><a id="logout-button" href="#">Log Out</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="assets/images/source video1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="caption">
+              
+              <h2>συστημα διαχειρισης αιθουσων</h2>
+              <p>Αυτή είναι μια ευέλικτη πλατφόρμα που βελτιώνει την οργάνωση, την αποτελεσματικότητα και επιτρέπει τόσο στους εκπαιδευτικούς όσο και στους μαθητές να εξερευνήσουν το πανεπιστημιακό περιβάλλον και να ανακαλύψουν σε ποιες αίθουσες θα πραγματοποιούνται τα μαθήματα.</p>
+              
+          </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+          
+            <li><a href="Ktirio Lymperi.html">
+            <div class="item">
+              <div class="item1">
+              <div class="icon">
+                <img src="assets/images/transparenticon.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Κτήριο Λυμπέρη</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            </div>
+            </a>
+          </li>
+
+
+            <li><a href="Ktirio Provatari.html">
+            <div class="item">
+              <div class="item2">
+              <div class="icon">
+                <img src="assets/images/transparenticon.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Κτήριο Προβατάρη</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </li>
+
+            <li><a href="Neo Sxoliko.html">
+            <div class="item">
+            <div class="item3">
+              <div class="icon">
+                <img src="assets/images/transparenticon.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Νέο Σχολικό</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            </div>
+          </a>
+        </li> 
+
+            <li><a href="Dimarxeio.html">
+            <div class="item">
+            <div class="item4">
+              <div class="icon">
+                <img src="assets/images/transparenticon.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Δημαρχείο Καλροβάσου</h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            </div>
+          </a>
+        </li>
+
+
+            <li><a href="Sxoliko Sigkrotima.html">
+            <div class="item">
+              <div class="item5">
+              <div class="icon">
+                <img src="assets/images/transparenticon.png" alt="">
+              </div>
+              <div class="down-content">
+                <h4>Σχολικό Συγκρότημα </h4>
+                <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
+              </div>
+            </div>
+            </div>
+             </a>
+          </li>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upcoming-meetings" id="meetings">
+    <div class="container">
+      <div class="row">
+        
+      </div>
+    </div>
+  </section>
+
+  
+
+  
+
+  <section class="contact-us" id="contact">
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; 2023 by ICSD. All rights reserved.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#">
+              <img src="assets/images/paneaiglogofooter.png" alt="Your Company Name" class="custom-width">
+
+            </a>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="https://www.facebook.com/theicsd" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/icsdaegean" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCUDJInyPBp7U0FU1RBFVT_Q" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+       $(document).ready(function() {
+  // Check if the user is logged in
+  var userId = sessionStorage.getItem('userId');
+  if (!userId) {
+    // Redirect to the login page or handle unauthorized access
+    window.location.href = "login1.html";
+  }
+
+  // Initialize Firebase
+  var firebaseConfig = {
+    apiKey: "AIzaSyDaZoKIyJdHltudOtqL-nHwJznLwxDxgjY",
+	  authDomain: "mpes-database.firebaseapp.com",
+	   databaseURL: "https://mpes-database-default-rtdb.europe-west1.firebasedatabase.app",
+	  projectId: "mpes-database",
+	  storageBucket: "mpes-database.appspot.com",
+	  messagingSenderId: "969357183449",
+	  appId: "1:969357183449:web:21010954f7f1b3237131c8",
+	  measurementId: "G-S7GBL413RN"
+};
+  firebase.initializeApp(firebaseConfig);
+
+      // Retrieve the user's name and display it
+  var firestore = firebase.firestore();
+  firestore.collection("users").doc(userId).get()
+    .then(function(doc) {
+      if (doc.exists) {
+        var username = doc.data().username;
+        $('#username').text(username);
+      } else {
+        console.log("User document not found");
+      }
+    })
+    .catch(function(error) {
+      console.error("Error retrieving user data: ", error);
+    });
+
+  // Toggle logout menu
+  var logoutMenuVisible = false;
+  $('#user-info').on('click', '.user-icon', function() {
+    logoutMenuVisible = !logoutMenuVisible;
+    if (logoutMenuVisible) {
+      $('#logout-menu').show();
+    } else {
+      $('#logout-menu').hide();
+    }
+  });
+
+  // Hide logout menu when clicking outside
+  $(document).on('click', function(event) {
+    if (!$(event.target).closest('#user-info').length) {
+      logoutMenuVisible = false;
+      $('#logout-menu').hide();
+    }
+  });
+
+  // Logout functionality
+  $('#logout-button').on('click', function() {
+    // Clear the login state from session storage
+    sessionStorage.removeItem('userId');
+
+    // Redirect to the login page or any desired page after logout
+    window.location.href = "login1.html";
+  });
+
+  // according to loftblog tut
+  $('.nav li:first').addClass('active');
+
+  var showSection = function showSection(section, isAnimate) {
+    var direction = section.replace(/#/, ''),
+      reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+      reqSectionPos = reqSection.offset().top - 0;
+
+    if (isAnimate) {
+      $('body, html').animate({
+        scrollTop: reqSectionPos
+      }, 800);
+    } else {
+      $('body, html').scrollTop(reqSectionPos);
+    }
+  };
+
+  var checkSection = function checkSection() {
+    $('.section').each(function() {
+      var $this = $(this),
+        topEdge = $this.offset().top - 80,
+        bottomEdge = topEdge + $this.height(),
+        wScroll = $(window).scrollTop();
+      if (topEdge < wScroll && bottomEdge > wScroll) {
+        var currentId = $this.data('section'),
+          reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+        reqLink.closest('li').addClass('active').
+        siblings().removeClass('active');
+      }
+    });
+  };
+
+  $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function(e) {
+    e.preventDefault();
+    showSection($(this).attr('href'), true);
+  });
+
+  $(window).scroll(function() {
+    checkSection();
+  });
+});
+
+
+    </script>
+</body>
+
+</body>
+</html>
