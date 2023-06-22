@@ -113,12 +113,8 @@ p {
   color: #2a2a2a;
 }
 
-
-
-
-
 img {
-  width: 5%;
+  width: 20px;
   overflow: hidden;
 }
 
@@ -157,11 +153,6 @@ body {
   .mobile-bottom-fix-big {
     margin-bottom: 60px;
   }
-}
-
-.img-ktirioimg{
-  width: 5%;
-  overflow: hidden;
 }
 
 .main-button-red a {
@@ -264,9 +255,16 @@ header
 }
 
 #user-info .user-icon {
-  margin-right: -460px;
+  margin-left: auto;
+  margin-right: 20px;
   cursor: pointer;
 }
+#user-info .user-icon img {
+  display: block;
+  height: auto;
+  vertical-align: middle;
+}
+
 
 #user-info #username {
   font-weight: bold;
@@ -275,7 +273,6 @@ header
 
 .user-icon {
   margin-right: 10px;
-  
 }
 
 #logout-menu {
@@ -785,33 +782,46 @@ banner
 
 .main-banner {
   position: relative;
-  max-height: 100%;
+  height: 100vh;
   overflow: hidden;
-  margin-bottom: -7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 #bg-video {
-    min-width: 100%;
-    min-height: 100vh;
-    max-width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 #bg-video::-webkit-media-controls {
-    display: none !important;
+  display: none !important;
 }
 
 .video-overlay {
-    position: absolute;
-    background-color: rgba(31,39,43,0.75);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
+  position: absolute;
+  background-color: rgba(31, 39, 43, 0.75);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
 }
+
 
 .main-banner .caption {
   position: absolute;
@@ -1042,7 +1052,7 @@ section.upcoming-meetings {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 230px;
-  padding-bottom: 1px;
+  padding-bottom: 110px;
 }
 
 section.upcoming-meetings .section-heading {
@@ -1103,7 +1113,6 @@ section.upcoming-meetings .categories .main-button-red a {
 .meeting-item .thumb img {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  width: 100%;
 }
 
 .meeting-item .thumb .price {
@@ -1136,7 +1145,7 @@ section.upcoming-meetings .categories .main-button-red a {
 }
 
 .locationpin img {
-  width: 65px;
+  width: 45px;
   height: auto;
 }
 .meeting-item .down-content .date h6 {
@@ -1484,7 +1493,7 @@ section.contact-us {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1px 0px 0px 0px;
+  padding: 140px 0px 0px 0px;
 }
 
 section.contact-us #contact {
